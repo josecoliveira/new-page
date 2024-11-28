@@ -13,11 +13,25 @@ sections:
     content:
       username: josecoliveira
   - block: resume-experience
+    id:  education
     content:
       username: josecoliveira
     params:
       date_format: 'January 2006'
       is_education_first: true
+  - block: collection
+    id: publications
+    content:
+      title: Recent Publications
+      text: ""
+      filters:
+        folders:
+          - publication
+        exclude_featured: false
+    design:
+      view: citation
+    params:
+      view: citation
     # design:
     #   # Hugo date format
     #   date_format: 'January 2006'
